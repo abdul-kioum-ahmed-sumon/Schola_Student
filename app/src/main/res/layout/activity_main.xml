@@ -196,6 +196,7 @@
                         android:background="@drawable/corner_radious">
 
                         <ImageButton
+                            android:id="@+id/btn_class_test"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:background="@drawable/class_test"

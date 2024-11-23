@@ -23,6 +23,7 @@ import com.example.schola.Fragments.HomeFragment
 import com.example.schola.Fragments.MessageFragment
 import com.example.schola.Fragments.ProfileFragment
 import com.example.schola.Model.SubjectActivity
+import com.example.schola.ClassTestListActivity
 import com.example.scholateacher.Model.Teacher
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
@@ -54,6 +55,13 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         val btnSubjects: ImageButton = findViewById(R.id.btn_subjects)
         btnSubjects.setOnClickListener {
             val intent = Intent(this, SubjectActivity::class.java)
+            startActivity(intent)
+        }
+
+
+        val btnClassTest: ImageButton = findViewById(R.id.btn_class_test)
+        btnClassTest.setOnClickListener{
+            val intent = Intent(this, ClassTestListActivity::class.java )
             startActivity(intent)
         }
 
