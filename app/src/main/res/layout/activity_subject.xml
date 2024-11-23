@@ -1,0 +1,412 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Model.SubjectActivity"
+    android:background="#D8E2F6">
+
+    <!-- Top Bar -->
+    <RelativeLayout
+        android:id="@+id/subject"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/routine_top_bar"
+        android:elevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="5"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.4"
+                android:gravity="center_vertical">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/left_arrow"
+                    android:background="@android:color/transparent"
+                    android:layout_marginTop="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3.6"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Subjects"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- Main Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subject">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:columnCount="1"
+            android:alignmentMode="alignMargins"
+            android:useDefaultMargins="true">
+
+            <LinearLayout
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:background="@drawable/corner_radious"
+                    android:layout_marginRight="30dp"
+                    android:elevation="8dp">
+
+                    <ImageButton
+                        android:id="@+id/subject_swe"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/swe"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="Subject Icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="CSE 3101 (SWE)"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:background="@drawable/corner_radious"
+                    android:elevation="8dp">
+
+                    <ImageButton
+                        android:id="@+id/subject_swe_lab"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/swe"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="Subject Icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="CSE 3102\n(SWE LAB)"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:background="@drawable/corner_radious"
+                    android:layout_marginRight="30dp"
+                    android:elevation="8dp">
+
+                    <ImageButton
+                        android:id="@+id/subject_mp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/mp"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="Subject Icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="CSE 3103 (MP)"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:background="@drawable/corner_radious"
+                    android:elevation="8dp">
+
+                    <ImageButton
+                        android:id="@+id/subject_mp_lab"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/mp"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="Subject Icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="CSE 3104\n(MP LAB)"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:background="@drawable/corner_radious"
+                    android:layout_marginEnd="30dp"
+                    android:elevation="8dp">
+
+                    <ImageButton
+                        android:id="@+id/subject_cmp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/co"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="Subject Icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="CSE 3109 (CMP)"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:background="@drawable/corner_radious"
+                    android:elevation="8dp">
+
+                    <ImageButton
+                        android:id="@+id/subject_cmp_lab"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/co"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="Subject Icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="CSE 3110\n(CMP LAB)"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:background="@drawable/corner_radious"
+                    android:layout_marginRight="30dp"
+                    android:elevation="8dp">
+
+                    <ImageButton
+                        android:id="@+id/subject_ca"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ca"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="Subject Icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="CSE 3105 (CA)"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:background="@drawable/corner_radious"
+                    android:elevation="8dp">
+
+                    <ImageButton
+                        android:id="@+id/subject_dc"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/dc"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="Subject Icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="CSE 3107 (DC)"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:background="@drawable/corner_radious"
+                    android:layout_marginRight="30dp"
+                    android:elevation="8dp">
+
+                    <ImageButton
+                        android:id="@+id/subject_me"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/me"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="Subject Icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="CSE 3181 (ME)"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:background="@drawable/corner_radious"
+                    android:elevation="8dp">
+
+                    <ImageButton
+                        android:id="@+id/subject_sdp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/sdp"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="Subject Icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="CSE 3100\n(SDP LAB)"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </GridLayout>
+    </ScrollView>
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/subject"
+        android:visibility="gone" />
+</RelativeLayout>
